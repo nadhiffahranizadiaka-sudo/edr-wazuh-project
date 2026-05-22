@@ -70,13 +70,14 @@ Semua terhubung via ZeroTier (10.75.139.146)
 | ZeroTier | Latest | Private Overlay Network |
 | Windows Defender | 4.18.26030.3011 | AV Layer |
 
-```markdown
 ## 📁 Repository Structure
 
-├── screenshots/     # Evidence dari semua deteksi
-├── configs/         # Sysmon config + Wazuh custom rules
-├── docs/            # Technical report & playbook
-└── report/          # Final technical report (.docx)
+```text
+├── EDR_Project/     # 18 Evidence visual dari semua deteksi simulasi
+├── configs/         # sysmon-config.xml + wazuh-local-rules.xml kustom
+└── report/          # Final Technical Report formal (.pdf)
+
+📄 Note: Seluruh materi penjelasan konsep EDR, langkah mitigasi insiden (Response Playbook), serta detail analisis forensik telah digabungkan secara lengkap di dalam dokumen EDR_Technical_Report_2026.pdf yang berada di dalam folder report/.
 ```
 
 ## 👥 Tim
