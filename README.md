@@ -39,19 +39,27 @@ Semua terhubung via ZeroTier (10.75.139.146)
 
 > **9/9 skenario terdeteksi** — melebihi target minimum 3 dari 5
 
-## 📸 Screenshots
+## 📸 Screenshots & Evidence
 
-### Dashboard Overview
-![Dashboard](screenshots/01-dashboard-overview.png)
+> 💡 **Note:** Untuk melihat seluruh 18 forensic evidence dan langkah simulasi secara lengkap, dapat mengakses [📁 Folder EDR Project Evidence](EDR_Project).
 
-### LSASS Credential Dump Detection
-![LSASS](screenshots/03-lsass-detection.png)
+### 1. EICAR Malware Detection
+![EICAR Detection](EDR_Project/01-EICAR-Detection_Overview.jpeg)
 
-### EICAR Malware Detection  
-![EICAR](screenshots/04-eicar-detection.png)
+### 2. Mimikatz SAM Dump / Credential Dumping
+![Mimikatz Detection](EDR_Project/09-Mimikatz_Detection_Result.jpg)
 
-### Mimikatz SAM Dump — Trojan:Win32/RegistryExfil.A
-![SAM](screenshots/05-mimikatz-sam-dump.png)
+### 3. Suspicious PowerShell Activity
+![Suspicious PowerShell](EDR_Project/04-Suspicious_Powershell_1.jpg)
+
+### 4. Persistence Detection (New Service)
+![Persistence](EDR_Project/12-Persistence_New_Service_Created.jpg)
+
+### 5. Unusual Parent-Child Process (WMI Execution)
+![Parent-Child](EDR_Project/16-Parents_Child_1.jpg)
+
+---
+*Klik link di atas untuk ke-13 screenshot lainnya.*
 
 ## 🔧 Tools & Configuration
 
