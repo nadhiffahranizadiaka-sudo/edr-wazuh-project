@@ -37,7 +37,7 @@ Semua terhubung via ZeroTier (10.75.139.146)
 | 8 | LOLBIN Certutil Abuse | T1218 | 62123 | 12 | ✅ Detected |
 | 9 | Discovery Activity | T1082 | 92031 | 3 | ✅ Detected |
 
-> **9/9 skenario terdeteksi** — melebihi target minimum 3 dari 5
+> **9/9 skenario terdeteksi**, melebihi target minimum 3 dari 5
 
 ## 📸 Screenshots & Evidence
 
@@ -92,4 +92,4 @@ Semua terhubung via ZeroTier (10.75.139.146)
 | Dokumentasi | Laporan & slide presentasi |
 
 ## 📄 License
-MIT License — For educational purposes only
+MIT License - For educational purposes only
