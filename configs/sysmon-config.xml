@@ -1,0 +1,19 @@
+<Sysmon schemaversion="4.90">
+  <HashAlgorithms>md5,sha256</HashAlgorithms>
+  <EventFiltering>
+    <ProcessCreate onmatch="exclude">
+      <Image condition="contains">svchost.exe</Image>
+      <Image condition="contains">MicrosoftEdgeUpdate</Image>
+      <Image condition="contains">WmiPrvSE</Image>
+    </ProcessCreate>
+    <ProcessAccess onmatch="include">
+      <TargetImage condition="end with">lsass.exe</TargetImage>
+    </ProcessAccess>
+    <RegistryEvent onmatch="include">
+      <TargetObject condition="contains">CurrentVersion\Run</TargetObject>
+    </RegistryEvent>
+    <FileCreate onmatch="include">
+      <TargetFilename condition="contains">Startup</TargetFilename>
+    </FileCreate>
+  </EventFiltering>
+</Sysmon>
