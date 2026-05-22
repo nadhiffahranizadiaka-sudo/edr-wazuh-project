@@ -1,0 +1,23 @@
+<group name="sysmon,windows,">
+
+  <rule id="100010" level="10">
+    <if_group>windows</if_group>
+    <field name="data.win.system.eventId">^1$</field>
+    <field name="data.win.eventdata.parentImage" type="pcre2">(?i)(powershell|mshta|wscript|cscript|rundll32)</field>
+    <description>Suspicious parent process spawned child: $(data.win.eventdata.image)</description>
+    <mitre>
+      <id>T1059</id>
+    </mitre>
+  </rule>
+
+  <rule id="100011" level="12">
+    <if_group>windows</if_group>
+    <field name="data.win.system.eventId">^1$</field>
+    <field name="data.win.eventdata.parentImage" type="pcre2">(?i)wmiprvse</field>
+    <description>WMI spawned suspicious process T1047: $(data.win.eventdata.image)</description>
+    <mitre>
+      <id>T1047</id>
+    </mitre>
+  </rule>
+
+</group>
